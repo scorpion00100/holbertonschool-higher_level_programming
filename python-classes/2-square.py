@@ -1,18 +1,18 @@
 #!/usr/bin/python3
 """
-Defines class Square with private attribute
+Defines class Square with private attribute size
 """
+
 
 class Square:
     """
-    size : size of side in square
+    class Square definition
     """
 
     def __init__(self, size=0):
         """
-        Initialize square
+        Initializes square
         """
-
         if type(size) is not int:
             raise TypeError("size must be an integer")
         elif size < 0:
