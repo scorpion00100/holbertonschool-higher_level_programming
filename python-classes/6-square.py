@@ -11,18 +11,38 @@ class Square:
     class Square definition
     Args:
         size (int): size of a side in square
+    Functions:
+        __init__(self, size, position)
+        size(self)
+        size(self, value)
+        position(self)
+        position(self, value)
+        area(self)
+        my_print(self)
     """
 
-    def __init__(self, size=0, position=(0, 0))
+    def __init__(self, size=0, position=(0, 0)):
+        """
+        Initializes square
+        """
         self.size = size
         self.position = position
 
     @property
     def size(self):
+        """"
+        Getter
+        Return: size
+        """
         return self.__size
 
     @size.setter
     def size(self, value):
+        """
+        Setter
+        Args:
+            value: sets size to value if int and >= 0
+        """
         if type(value) is not int:
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -32,10 +52,19 @@ class Square:
 
     @property
     def position(self):
+        """"
+        Getter
+        Return: position
+        """
         return self.__position
 
     @position.setter
     def position(self, value):
+        """
+        Setter
+        Args:
+            value: sets position to tuple if value is tuple of 2 positive ints
+        """
         if type(value) is not tuple or len(value) != 2 or \
            type(value[0]) is not int or type(value[1]) is not int or \
            value[0] < 0 or value[1] < 0:
