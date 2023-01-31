@@ -1,19 +1,27 @@
 #!/usr/bin/python3
 """
-Defines class Square with private attribute size and validates size
+Defines class Square with private size and public area
+Can access and update size
 """
+
+
 class Square:
     """
-    size (int): size of a side in square
+    class Square definition
+    Args:
+        size (int): size of a side in square
     """
+
     def __init__(self, size=0):
         """
-        Initialize square
+        Initializes square
         """
         self.size = size
+
     @property
     def size(self):
         return self.__size
+
     @size.setter
     def size(self, value):
         if type(value) is not int:
@@ -22,5 +30,6 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
+
     def area(self):
         return (self.__size)**2
