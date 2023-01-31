@@ -2,10 +2,12 @@
 """
 Defines class Square with private attribute
 """
+
 class Square:
     """
     size : size of side in square
     """
+
     def __init__(self, size=0):
         """
         Initialize square
