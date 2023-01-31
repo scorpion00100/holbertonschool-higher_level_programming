@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
-Defines class Square with private size and public area
-Can access and update size
+Defines class Square with private size and position; and public area
+Can access and update size and position
+Can print to stdout the square using #'s
 """
 
 
@@ -12,11 +13,9 @@ class Square:
         size (int): size of a side in square
     """
 
-    def __init__(self, size=0, position=(0, 0)):
-        """
-        Initializes square
-        """
+    def __init__(self, size=0, position=(0, 0))
         self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -31,7 +30,7 @@ class Square:
         else:
             self.__size = value
 
-     @property
+    @property
     def position(self):
         return self.__position
 
