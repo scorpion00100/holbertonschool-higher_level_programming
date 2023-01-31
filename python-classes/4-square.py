@@ -2,7 +2,6 @@
 """
 Defines class Square with private attribute size and validates size
 """
-
 class Square:
     """
     size (int): size of a side in square
@@ -16,8 +15,7 @@ class Square:
 
     @property
     def size(self):
-        return self.__size
-        
+        return self.__size        
     @size.setter
     def size(self, value):
 
