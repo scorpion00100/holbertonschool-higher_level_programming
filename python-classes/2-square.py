@@ -6,7 +6,7 @@ class Square:
     """
     size : size of side in square
     """
-    def __init__(self, size = 0):
+    def __init__(self, size=0):
         """
         Initialize square
         """
@@ -15,4 +15,4 @@ class Square:
         elif size < 0:
             raise ValueError("size mut be >= 0")
         else:
-            self__size = size
+            self.__size = size
