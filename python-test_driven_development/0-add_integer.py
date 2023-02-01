@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-''' Add integer module '''
+"""
+Contains one method that returns an int sum
+"""
+
 
 def add_integer(a, b=98):
     """
