@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Contains class Rectangle with private attribute width and height,
-public area and perimeter methods, allows printing #'s, and deletes
+public area and perimeter methods, allows printing #, and deletes
 """
 
 
@@ -23,7 +23,7 @@ class Rectangle:
         __repr__(self)
         __del__(self)
     """
-     def __init__(self, width=0, height=0):
+    def __init__(self, width=0, height=0):
         """ Initialize rectangles """
         self.width = width
         self.height = height
@@ -67,7 +67,7 @@ class Rectangle:
         return (2 * self.__width) + (2 * self.height)
 
     def __str__(self):
-        """ Prints rectangle with #'s """
+        """ Prints rectangle with # """
         if self.__width == 0 or self.__height == 0:
             return ""
         nad = "\n".join(["#" * self.__width for rows in range(self.__height)])
