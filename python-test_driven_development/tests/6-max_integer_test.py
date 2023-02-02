@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""Unittest for max_integer([.....])
+"""Unittest for max_integer([....])
 """
 import unittest
 max_integer = __import__('6-max_integer').max_integer
 
 
 class TestMaxInteger(unittest.TestCase):
-    ''' Unit in cases of max_integer '''
+    ''' Unit cases for max_integer '''
     def test_empty(self):
         self.assertIs(max_integer(), None)
 
@@ -24,7 +24,7 @@ class TestMaxInteger(unittest.TestCase):
             max_integer(None)
 
     def test_string_argument(self):
-        self.assertIs(max_integer('Live Coding'), 't')
+        self.assertIs(max_integer('Holberton Toulouse'), 't')
 
     def test_list_string(self):
         with self.assertRaises(TypeError):
