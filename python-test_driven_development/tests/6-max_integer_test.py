@@ -24,7 +24,7 @@ class TestMaxInteger(unittest.TestCase):
             max_integer(None)
 
     def test_string_argument(self):
-        self.assertIs(max_integer('Live coding'), 't')
+        self.assertIs(max_integer('Live Coding'), 't')
 
     def test_list_string(self):
         with self.assertRaises(TypeError):
