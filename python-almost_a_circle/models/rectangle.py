@@ -136,3 +136,8 @@ class Rectangle(Base):
         pattern = '{}' \
             .format((' ' * x + '#' * w + '\n') * self.__height)
         print(pattern, end='')
+
+     def __str__(self):
+        """Overriding str method from Base"""
+        return '[Rectangle] ({}) {}/{} - {}/{}' \
+            .format(self.id, self.x, self.y, self.width, self.height)
