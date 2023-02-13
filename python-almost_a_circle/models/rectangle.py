@@ -1,13 +1,30 @@
 #!/usr/bin/python3
 """Module for classs Rectangle"""
-form models.base import Base
+from models.base import Base
 
+class Rectangle(Base):
+    """
+    Class that represents a Rectangle and inherits from Base.
 
-class Rectangle(base):
-    """subclass from Base"""
+    Private instance attributes:
+        __width (int): width of the rectangle
+        __height (int): height of the rectangle
+        __x (int): x-coordinate of the rectangle
+        __y (int): y-coordinate of the rectangle
 
+    """
     def __init__(self, width, height, x=0, y=0, id=None):
-        """constructor for rectangle"""
+        """
+        Constructor for the Rectangle class.
+
+        Args:
+            width (int): width of the rectangle
+            height (int): height of the rectangle
+            x (int, optional): x-coordinate of the rectangle. Defaults to 0.
+            y (int, optional): y-coordinate of the rectangle. Defaults to 0.
+            id (int, optional): id of the rectangle. Defaults to None.
+
+        """
         super().__init__(id)
         self.__width = width
         self.__height = height
@@ -16,32 +33,88 @@ class Rectangle(base):
 
     @property
     def width(self):
-        return self.__width
+        """
+        Getter for the width attribute.
 
+        Returns:
+            int: width of the rectangle.
+
+        """
+        return self.__width
+    
     @width.setter
     def width(self, value):
-        self.__width = value
+        """
+        Setter for the width attribute.
 
+        Args:
+            value (int): new value for the width attribute.
+
+        """
+        self.__width = value
+    
     @property
     def height(self):
-        return self.__height
+        """
+        Getter for the height attribute.
 
+        Returns:
+            int: height of the rectangle.
+
+        """
+        return self.__height
+    
     @height.setter
     def height(self, value):
-        self.__height = value
+        """
+        Setter for the height attribute.
 
+        Args:
+            value (int): new value for the height attribute.
+
+        """
+        self.__height = value
+    
     @property
     def x(self):
-        return self.__x
+        """
+        Getter for the x attribute.
 
+        Returns:
+            int: x-coordinate of the rectangle.
+
+        """
+        return self.__x
+    
     @x.setter
     def x(self, value):
-        self.__x = value
+        """
+        Setter for the x attribute.
 
+        Args:
+            value (int): new value for the x attribute.
+
+        """
+        self.__x = value
+    
     @property
     def y(self):
-        return self.__y
+        """
+        Getter for the y attribute.
 
+        Returns:
+            int: y-coordinate of the rectangle.
+
+        """
+        return self.__y
+    
     @y.setter
     def y(self, value):
+        """
+        Setter for the y attribute.
+
+        Args:
+            value (int): new value for the y attribute.
+
+        """
         self.__y = value
