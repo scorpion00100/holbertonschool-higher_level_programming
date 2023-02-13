@@ -129,4 +129,10 @@ class Rectangle(Base):
 
     def display(self):
         """displays a rectangle using # to stdout"""
-        print("\n".join(["".join(["#" for x in range(self.width)]) for y in range(self.height)]))
+        w, h = self.width, self.height
+        x, y = self.x, self.y
+
+        print('\n' * y, end='')
+        pattern = '{}' \
+            .format((' ' * x + '#' * w + '\n') * self.__height)
+        print(pattern, end='')
