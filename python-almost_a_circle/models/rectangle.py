@@ -128,7 +128,7 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
-         """ displays a rectangle using # to stdout """
+         """displays a rectangle using # to stdout"""
         rectangle = self.y * "\n"
         for i in range(self.height):
             rectangle += (" " * self.x)
