@@ -2,6 +2,7 @@
 """Module for classs Rectangle"""
 from models.base import Base
 
+
 class Rectangle(Base):
     """
     Class that represents a Rectangle and inherits from Base.
@@ -38,8 +39,7 @@ class Rectangle(Base):
 
         Returns:
             int: width of the rectangle.
-
-        """
+        """ 
         return self.__width
     
     @width.setter
@@ -60,7 +60,6 @@ class Rectangle(Base):
 
         Returns:
             int: height of the rectangle.
-
         """
         return self.__height
     
@@ -71,7 +70,6 @@ class Rectangle(Base):
 
         Args:
             value (int): new value for the height attribute.
-
         """
         self.__height = value
     
@@ -82,7 +80,6 @@ class Rectangle(Base):
 
         Returns:
             int: x-coordinate of the rectangle.
-
         """
         return self.__x
     
@@ -93,7 +90,6 @@ class Rectangle(Base):
 
         Args:
             value (int): new value for the x attribute.
-
         """
         self.__x = value
     
@@ -104,7 +100,6 @@ class Rectangle(Base):
 
         Returns:
             int: y-coordinate of the rectangle.
-
         """
         return self.__y
     
@@ -115,6 +110,5 @@ class Rectangle(Base):
 
         Args:
             value (int): new value for the y attribute.
-
         """
         self.__y = value
