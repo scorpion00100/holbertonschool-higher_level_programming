@@ -142,15 +142,18 @@ class Rectangle(Base):
         return '[Rectangle] ({}) {}/{} - {}/{}' \
             .format(self.id, self.x, self.y, self.width, self.height)
 
-    def update(self, *args):
-        """adding the public thar assign an args"""
-        if len(args) >= 1:
-            self.id = args[0]
-        if len(args) >= 2:
-            self.width = args[1]
-        if len(args) >= 3:
-            self.height = args[2]
-        if len(args) >= 4:
-            self.x = args[3]
-        if len(args) >= 5:
-            self.y = args[4]
+    def update(self, *args, **kwargs):
+        """Update the object with keyword-argument"""
+        attributes = ['id', 'width', 'height', 'x', 'y']
+
+        for idx, x in enumerate(args):
+            if idx >= len(attributes):
+                return
+
+            self.__setattr__(attributes[idx], x)
+
+        if args:
+            return
+
+        for k, v in kwargs.items():
+            self.__setattr__(k, v)
