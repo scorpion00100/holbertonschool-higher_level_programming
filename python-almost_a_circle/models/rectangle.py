@@ -3,7 +3,6 @@
 from models.base import Base
 
 
-
 class Rectangle(Base):
     """
     Class that represents a Rectangle and inherits from Base.
@@ -42,6 +41,7 @@ class Rectangle(Base):
             int: width of the rectangle.
         """
         return self.__width
+
     @width.setter
     def width(self, value):
         """
@@ -51,6 +51,7 @@ class Rectangle(Base):
             value (int): new value for the width attribute.
         """
         self.__width = value
+
     @property
     def height(self):
         """
@@ -60,6 +61,7 @@ class Rectangle(Base):
             int: height of the rectangle.
         """
         return self.__height
+
     @height.setter
     def height(self, value):
         """
@@ -69,6 +71,7 @@ class Rectangle(Base):
             value (int): new value for the height attribute.
         """
         self.__height = value
+
     @property
     def x(self):
         """
@@ -78,6 +81,7 @@ class Rectangle(Base):
             int: x-coordinate of the rectangle.
         """
         return self.__x
+
     @x.setter
     def x(self, value):
         """
@@ -87,6 +91,7 @@ class Rectangle(Base):
             value (int): new value for the x attribute.
         """
         self.__x = value
+
     @property
     def y(self):
         """
@@ -96,6 +101,7 @@ class Rectangle(Base):
             int: y-coordinate of the rectangle.
         """
         return self.__y
+
     @y.setter
     def y(self, value):
         """
