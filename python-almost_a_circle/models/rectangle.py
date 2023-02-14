@@ -159,5 +159,10 @@ class Rectangle(Base):
             self.__setattr__(k, v)
 
     def to_dictionary(self):
-         """Return the dictionary representation of a rectangle"""
-         return {'id': self.id, 'width': self.width, 'height': self.height, 'x': self.x, 'y': self.y}
+        """ returns the dictionary representation of a Rectangle """
+        list_atr = ['id', 'width', 'height', 'x', 'y']
+        dict_rep = {}
+
+        for key in list_atr:
+            dict_rep[key] = getattr(self, key)
+        return dict_rep
