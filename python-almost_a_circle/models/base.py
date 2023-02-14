@@ -12,4 +12,12 @@ class Base:
             self.id = id
         else:
             Base.__nb_objects += 1
-            self.id = Base.__nb_objects
+            self.id = Base.__nb_objectis
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """Convert dictionary into json string"""
+        if not list_dictionaries:
+            return "[]"
+
+        return json.dumps(list_dictionaries)
