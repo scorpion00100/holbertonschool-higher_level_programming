@@ -36,3 +36,11 @@ class Base:
         json_string = Base.to_json_string(dicts)
         with open(cls.__name__ + '.json', 'w') as f:
             f.write(json_string)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Return list Pyhton objects from json_string"""
+        if not json_string:
+            return []
+
+        return json.loads(json_string)
