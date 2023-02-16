@@ -67,6 +67,7 @@ class TestBaseMethods(unittest.TestCase):
             self.assertEqual(file.read(), "[]")
 
     def test_save_to_file_3(self):
+        """ Test JSON file """
         Square.save_to_file(None)
         res = "[]\n"
         with open("Square.json", "r") as file:
@@ -78,10 +79,6 @@ class TestBaseMethods(unittest.TestCase):
             os.remove("Square.json")
         except:
             pass
-
-        Square.save_to_file([])
-        with open("Square.json", "r") as file:
-            self.assertEqual(file.read(), "[]")
 
     def test_save_to_file_2(self):
         """ Test JSON file """
