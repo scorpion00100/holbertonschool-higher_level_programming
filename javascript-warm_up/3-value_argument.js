@@ -6,5 +6,5 @@ const [,, arg] = process.argv;
 if (arg) {
   console.log(arg);
 } else {
-  console.log('Aucun argument');
+  console.log('No argument');
 }
