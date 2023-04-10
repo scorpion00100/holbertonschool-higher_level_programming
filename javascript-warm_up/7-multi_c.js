@@ -1,6 +1,4 @@
 #!/usr/bin/node
-// script that prints x times
-
 if (isNaN(parseInt(process.argv[2]))) {
     console.log('Missing number of occurrences');
   } else {
@@ -8,4 +6,3 @@ if (isNaN(parseInt(process.argv[2]))) {
       console.log('C is fun');
     }
   }
-  
