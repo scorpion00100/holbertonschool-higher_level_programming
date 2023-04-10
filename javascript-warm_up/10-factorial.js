@@ -9,8 +9,7 @@ function factorial(n) {
     } else {
       return n * factorial(n - 1);
     }
-  }
+}
   
-  const num = Number(process.argv[2]);
-  console.log(factorial(num));
-  
+const num = Number(process.argv[2]);
+console.log(factorial(num));
